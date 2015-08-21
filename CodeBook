@@ -1,0 +1,98 @@
+Code Book
+Revised 8/21/2015
+
+Code book for course project for Getting and Cleaning Data course on Coursera
+See README file for full description of data sets, processing steps taken, and R code. 
+
+The table below indicates where each original data item was found, the original name, an intermediate name used in R, and the final name used in the output of the R code. 
+
+
+Source file for variable	Original name from data set documentation	R assigned names as	"Clean" names assigned for final data set
+subject_test.txt and subject_train.txt	n/a…	Subject	Subject
+activity_labels.txt provided descriptions; y_test.txt and y_train provided observations	n/a…	Activity	Activity
+X_test.txt and X_train.txt	tBodyAcc-mean()-X	tBodyAcc.mean...X	TimeBodyAccelerometerMeanX
+X_test.txt and X_train.txt	tBodyAcc-mean()-Y	tBodyAcc.mean...Y	TimeBodyAccelerometerMeanY
+X_test.txt and X_train.txt	tBodyAcc-mean()-Z	tBodyAcc.mean...Z	TimeBodyAccelerometerMeanZ
+X_test.txt and X_train.txt	tGravityAcc-mean()-X	tGravityAcc.mean...X	TimeGravityAccelerometerMeanX
+X_test.txt and X_train.txt	tGravityAcc-mean()-Y	tGravityAcc.mean...Y	TimeGravityAccelerometerMeanY
+X_test.txt and X_train.txt	tGravityAcc-mean()-Z	tGravityAcc.mean...Z	TimeGravityAccelerometerMeanZ
+X_test.txt and X_train.txt	tBodyAccJerk-mean()-X	tBodyAccJerk.mean...X	TimeBodyAccelerometerJerkMeanX
+X_test.txt and X_train.txt	tBodyAccJerk-mean()-Y	tBodyAccJerk.mean...Y	TimeBodyAccelerometerJerkMeanY
+X_test.txt and X_train.txt	tBodyAccJerk-mean()-Z	tBodyAccJerk.mean...Z	TimeBodyAccelerometerJerkMeanZ
+X_test.txt and X_train.txt	tBodyGyro-mean()-X	tBodyGyro.mean...X	TimeBodyGyroscopeMeanX
+X_test.txt and X_train.txt	tBodyGyro-mean()-Y	tBodyGyro.mean...Y	TimeBodyGyroscopeMeanY
+X_test.txt and X_train.txt	tBodyGyro-mean()-Z	tBodyGyro.mean...Z	TimeBodyGyroscopeMeanZ
+X_test.txt and X_train.txt	tBodyGyroJerk-mean()-X	tBodyGyroJerk.mean...X	TimeBodyGyroscopeJerkMeanX
+X_test.txt and X_train.txt	tBodyGyroJerk-mean()-Y	tBodyGyroJerk.mean...Y	TimeBodyGyroscopeJerkMeanY
+X_test.txt and X_train.txt	tBodyGyroJerk-mean()-Z	tBodyGyroJerk.mean...Z	TimeBodyGyroscopeJerkMeanZ
+X_test.txt and X_train.txt	tBodyAccMag-mean()	tBodyAccMag.mean..	TimeBodyAccelerometerMagnitudeMean
+X_test.txt and X_train.txt	tGravityAccMag-mean()	tGravityAccMag.mean..	TimeGravityAccelerometerMagnitudeMean
+X_test.txt and X_train.txt	tBodyAccJerkMag-mean()	tBodyAccJerkMag.mean..	TimeBodyAccelerometerJerkMagnitudeMean
+X_test.txt and X_train.txt	tBodyGyroMag-mean()	tBodyGyroMag.mean..	TimeBodyGyroscopeMagnitudeMean
+X_test.txt and X_train.txt	tBodyGyroJerkMag-mean()	tBodyGyroJerkMag.mean..	TimeBodyGyroscopeJerkMagnitudeMean
+X_test.txt and X_train.txt	fBodyAcc-mean()-X	fBodyAcc.mean...X	FrequencyBodyAccelerometerMeanX
+X_test.txt and X_train.txt	fBodyAcc-mean()-Y	fBodyAcc.mean...Y	FrequencyBodyAccelerometerMeanY
+X_test.txt and X_train.txt	fBodyAcc-mean()-Z	fBodyAcc.mean...Z	FrequencyBodyAccelerometerMeanZ
+X_test.txt and X_train.txt	fBodyAcc-meanFreq()-X	fBodyAcc.meanFreq...X	FrequencyBodyAccelerometerMeanFrequencyX
+X_test.txt and X_train.txt	fBodyAcc-meanFreq()-Y	fBodyAcc.meanFreq...Y	FrequencyBodyAccelerometerMeanFrequencyY
+X_test.txt and X_train.txt	fBodyAcc-meanFreq()-Z	fBodyAcc.meanFreq...Z	FrequencyBodyAccelerometerMeanFrequencyZ
+X_test.txt and X_train.txt	fBodyAccJerk-mean()-X	fBodyAccJerk.mean...X	FrequencyBodyAccelerometerJerkMeanX
+X_test.txt and X_train.txt	fBodyAccJerk-mean()-Y	fBodyAccJerk.mean...Y	FrequencyBodyAccelerometerJerkMeanY
+X_test.txt and X_train.txt	fBodyAccJerk-mean()-Z	fBodyAccJerk.mean...Z	FrequencyBodyAccelerometerJerkMeanZ
+X_test.txt and X_train.txt	fBodyAccJerk-meanFreq()-X	fBodyAccJerk.meanFreq...X	FrequencyBodyAccelerometerJerkMeanFrequencyX
+X_test.txt and X_train.txt	fBodyAccJerk-meanFreq()-Y	fBodyAccJerk.meanFreq...Y	FrequencyBodyAccelerometerJerkMeanFrequencyY
+X_test.txt and X_train.txt	fBodyAccJerk-meanFreq()-Z	fBodyAccJerk.meanFreq...Z	FrequencyBodyAccelerometerJerkMeanFrequencyZ
+X_test.txt and X_train.txt	fBodyGyro-mean()-X	fBodyGyro.mean...X	FrequencyBodyGyroscopeMeanX
+X_test.txt and X_train.txt	fBodyGyro-mean()-Y	fBodyGyro.mean...Y	FrequencyBodyGyroscopeMeanY
+X_test.txt and X_train.txt	fBodyGyro-mean()-Z	fBodyGyro.mean...Z	FrequencyBodyGyroscopeMeanZ
+X_test.txt and X_train.txt	fBodyGyro-meanFreq()-X	fBodyGyro.meanFreq...X	FrequencyBodyGyroscopeMeanFrequencyX
+X_test.txt and X_train.txt	fBodyGyro-meanFreq()-Y	fBodyGyro.meanFreq...Y	FrequencyBodyGyroscopeMeanFrequencyY
+X_test.txt and X_train.txt	fBodyGyro-meanFreq()-Z	fBodyGyro.meanFreq...Z	FrequencyBodyGyroscopeMeanFrequencyZ
+X_test.txt and X_train.txt	fBodyAccMag-mean()	fBodyAccMag.mean..	FrequencyBodyAccelerometerMagnitudeMean
+X_test.txt and X_train.txt	fBodyAccMag-meanFreq()	fBodyAccMag.meanFreq..	FrequencyBodyAccelerometerMagnitudeMeanFrequency
+X_test.txt and X_train.txt	fBodyBodyAccJerkMag-mean()	fBodyBodyAccJerkMag.mean..	FrequencyBodyAccelerometerJerkMagnitudeMean
+X_test.txt and X_train.txt	fBodyBodyAccJerkMag-meanFreq()	fBodyBodyAccJerkMag.meanFreq..	FrequencyBodyAccelerometerJerkMagnitudeMeanFrequency
+X_test.txt and X_train.txt	fBodyBodyGyroMag-mean()	fBodyBodyGyroMag.mean..	FrequencyBodyGyroscopeMagnitudeMean
+X_test.txt and X_train.txt	fBodyBodyGyroMag-meanFreq()	fBodyBodyGyroMag.meanFreq..	FrequencyBodyGyroscopeMagnitudeMeanFrequency
+X_test.txt and X_train.txt	fBodyBodyGyroJerkMag-mean()	fBodyBodyGyroJerkMag.mean..	FrequencyBodyGyroscopeJerkMagnitudeMean
+X_test.txt and X_train.txt	fBodyBodyGyroJerkMag-meanFreq()	fBodyBodyGyroJerkMag.meanFreq..	FrequencyBodyGyroscopeJerkMagnitudeMeanFrequency
+X_test.txt and X_train.txt	angle(tBodyAccMean,gravity)	angle.tBodyAccMean.gravity.	AngleTimeBodyAccelerometerMeanGravity
+X_test.txt and X_train.txt	angle(tBodyAccJerkMean),gravityMean)	angle.tBodyAccJerkMean..gravityMean.	AngleTimeBodyAccelerometerJerkMeanGravityMean
+X_test.txt and X_train.txt	angle(tBodyGyroMean,gravityMean)	angle.tBodyGyroMean.gravityMean.	AngleTimeBodyGyroscopeMeanGravityMean
+X_test.txt and X_train.txt	angle(tBodyGyroJerkMean,gravityMean)	angle.tBodyGyroJerkMean.gravityMean.	AngleTimeBodyGyroscopeJerkMeanGravityMean
+X_test.txt and X_train.txt	angle(X,gravityMean)	angle.X.gravityMean.	AngleXGravityMean
+X_test.txt and X_train.txt	angle(Y,gravityMean)	angle.Y.gravityMean.	AngleYGravityMean
+X_test.txt and X_train.txt	angle(Z,gravityMean)	angle.Z.gravityMean.	AngleZGravityMean
+X_test.txt and X_train.txt	tBodyAcc-std()-X	tBodyAcc.std...X	TimeBodyAccelerometerSTDX
+X_test.txt and X_train.txt	tBodyAcc-std()-Y	tBodyAcc.std...Y	TimeBodyAccelerometerSTDY
+X_test.txt and X_train.txt	tBodyAcc-std()-Z	tBodyAcc.std...Z	TimeBodyAccelerometerSTDZ
+X_test.txt and X_train.txt	tGravityAcc-std()-X	tGravityAcc.std...X	TimeGravityAccelerometerSTDX
+X_test.txt and X_train.txt	tGravityAcc-std()-Y	tGravityAcc.std...Y	TimeGravityAccelerometerSTDY
+X_test.txt and X_train.txt	tGravityAcc-std()-Z	tGravityAcc.std...Z	TimeGravityAccelerometerSTDZ
+X_test.txt and X_train.txt	tBodyAccJerk-std()-X	tBodyAccJerk.std...X	TimeBodyAccelerometerJerkSTDX
+X_test.txt and X_train.txt	tBodyAccJerk-std()-Y	tBodyAccJerk.std...Y	TimeBodyAccelerometerJerkSTDY
+X_test.txt and X_train.txt	tBodyAccJerk-std()-Z	tBodyAccJerk.std...Z	TimeBodyAccelerometerJerkSTDZ
+X_test.txt and X_train.txt	tBodyGyro-std()-X	tBodyGyro.std...X	TimeBodyGyroscopeSTDX
+X_test.txt and X_train.txt	tBodyGyro-std()-Y	tBodyGyro.std...Y	TimeBodyGyroscopeSTDY
+X_test.txt and X_train.txt	tBodyGyro-std()-Z	tBodyGyro.std...Z	TimeBodyGyroscopeSTDZ
+X_test.txt and X_train.txt	tBodyGyroJerk-std()-X	tBodyGyroJerk.std...X	TimeBodyGyroscopeJerkSTDX
+X_test.txt and X_train.txt	tBodyGyroJerk-std()-Y	tBodyGyroJerk.std...Y	TimeBodyGyroscopeJerkSTDY
+X_test.txt and X_train.txt	tBodyGyroJerk-std()-Z	tBodyGyroJerk.std...Z	TimeBodyGyroscopeJerkSTDZ
+X_test.txt and X_train.txt	tBodyAccMag-std()	tBodyAccMag.std..	TimeBodyAccelerometerMagnitudeSTD
+X_test.txt and X_train.txt	tGravityAccMag-std()	tGravityAccMag.std..	TimeGravityAccelerometerMagnitudeSTD
+X_test.txt and X_train.txt	tBodyAccJerkMag-std()	tBodyAccJerkMag.std..	TimeBodyAccelerometerJerkMagnitudeSTD
+X_test.txt and X_train.txt	tBodyGyroMag-std()	tBodyGyroMag.std..	TimeBodyGyroscopeMagnitudeSTD
+X_test.txt and X_train.txt	tBodyGyroJerkMag-std()	tBodyGyroJerkMag.std..	TimeBodyGyroscopeJerkMagnitudeSTD
+X_test.txt and X_train.txt	fBodyAcc-std()-X	fBodyAcc.std...X	FrequencyBodyAccelerometerSTDX
+X_test.txt and X_train.txt	fBodyAcc-std()-Y	fBodyAcc.std...Y	FrequencyBodyAccelerometerSTDY
+X_test.txt and X_train.txt	fBodyAcc-std()-Z	fBodyAcc.std...Z	FrequencyBodyAccelerometerSTDZ
+X_test.txt and X_train.txt	fBodyAccJerk-std()-X	fBodyAccJerk.std...X	FrequencyBodyAccelerometerJerkSTDX
+X_test.txt and X_train.txt	fBodyAccJerk-std()-Y	fBodyAccJerk.std...Y	FrequencyBodyAccelerometerJerkSTDY
+X_test.txt and X_train.txt	fBodyAccJerk-std()-Z	fBodyAccJerk.std...Z	FrequencyBodyAccelerometerJerkSTDZ
+X_test.txt and X_train.txt	fBodyGyro-std()-X	fBodyGyro.std...X	FrequencyBodyGyroscopeSTDX
+X_test.txt and X_train.txt	fBodyGyro-std()-Y	fBodyGyro.std...Y	FrequencyBodyGyroscopeSTDY
+X_test.txt and X_train.txt	fBodyGyro-std()-Z	fBodyGyro.std...Z	FrequencyBodyGyroscopeSTDZ
+X_test.txt and X_train.txt	fBodyAccMag-std()	fBodyAccMag.std..	FrequencyBodyAccelerometerMagnitudeSTD
+X_test.txt and X_train.txt	fBodyBodyAccJerkMag-std()	fBodyBodyAccJerkMag.std..	FrequencyBodyAccelerometerJerkMagnitudeSTD
+X_test.txt and X_train.txt	fBodyBodyGyroMag-std()	fBodyBodyGyroMag.std..	FrequencyBodyGyroscopeMagnitudeSTD
+X_test.txt and X_train.txt	fBodyBodyGyroJerkMag-std()	fBodyBodyGyroJerkMag.std..	FrequencyBodyGyroscopeJerkMagnitudeSTD
