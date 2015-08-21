@@ -20,6 +20,8 @@ X_train.txt
 y_test.txt
 y_train.txt
 
+You must also have loaded the R package dplyr to use all of the functions within the code. 
+
 To run code, save run_analysis.R in your working directory and use the source("run_analysis.R") syntax within R.
 
 There is a code book saved within this same repository with additional description of each variable.
