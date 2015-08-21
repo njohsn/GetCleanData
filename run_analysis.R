@@ -1,5 +1,7 @@
 ##See README within this repository for additional explanation of code
 
+## Note that the dplyr package must be loaded in R for the code to execute fully 
+
 ## read in data from each file related to the test data set
 test_subjects <- read.csv("subject_test.txt", header=FALSE)
 test_act <- read.csv("y_test.txt", header=FALSE)
